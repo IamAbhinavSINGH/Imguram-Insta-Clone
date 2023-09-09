@@ -1,14 +1,19 @@
-# Imguram - Instagram Clone with Imgur API
+# Imguram-Insta-Clone
+
+
+Imguram is an Android app that serves as a clone of Instagram, leveraging the Imgur API to provide various features like watching stories, browsing feeds, and more. With Imguram, users can enjoy a visually engaging experience similar to Instagram, while also exploring the unique content available on Imgur. This README file provides an overview of the app, installation instructions, and usage guidelines.
+
+
 
 <img src="/screenshots/ss0.jpg" alt="App Screenshot" width="300">
 
-Imguram is an Android app that serves as a clone of Instagram, leveraging the Imgur API to provide various features like watching stories, browsing feeds, and more. With Imguram, users can enjoy a visually engaging experience similar to Instagram, while also exploring the unique content available on Imgur. This README file provides an overview of the app, installation instructions, and usage guidelines.
+
 
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#ScreenShots)
+- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -56,7 +61,7 @@ To run Imguram on your Android device, follow these steps:
 3. **Stories**: Access stories from other users and upload your own by tapping your profile picture.
 
 
-## ScreenShots
+## Screenshots
 
 <img src="/screenshots/ss1.jpg" alt="App Screenshot" width="300">  <img src="/screenshots/ss2.jpg" alt="App Screenshot" width="300">
 
