@@ -8,7 +8,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 object ImgurClient {
 
-    const val API_KEY = "Insert Your API_KEY here"
+    const val API_KEY = "Add your key here"
     // TODO: This should not be placed here remove it when open sourcing this project
 
     private val HttpClinet : OkHttpClient by lazy {
@@ -32,7 +32,8 @@ object ImgurClient {
 
     }
 
-    val api : ImgurAPIv3 by lazy {
+    val api: ImgurAPIv3 by lazy {
         retrofit.create(ImgurAPIv3::class.java)
     }
+
 }

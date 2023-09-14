@@ -10,6 +10,7 @@ import coil.load
 import com.abhinav.imguram.databinding.ListItemStoryHeadBinding
 import com.abhinav.imguram.ui.story.StoryActivity
 import com.abhinav.libimgurapi.models.Tag
+import com.bumptech.glide.Glide
 
 
 class HomeStoriesRecyclerAdapter() :
@@ -41,7 +42,10 @@ class HomeStoriesRecyclerAdapter() :
         val tag = getItem(position)
 
         holder.binding.homeTextView.text = tag.displayName
-        holder.binding.homeImageView.load("https://i.imgur.com/${tag.backgroundHash}.jpg")
+        Glide.with(holder.binding.homeImageView.context)
+            .load("https://i.imgur.com/${tag.backgroundHash}.jpg")
+            .into(holder.binding.homeImageView)
+
         holder.binding.root.apply {
           setOnClickListener {
                   context.startActivity(

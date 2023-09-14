@@ -14,6 +14,11 @@ import coil.request.CachePolicy
 import coil.request.ImageRequest
 import coil.size.ViewSizeResolver
 import com.abhinav.imguram.databinding.FragmentFeedBinding
+import com.bumptech.glide.Glide
+import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class FeedFragment : Fragment() {
 
@@ -43,8 +48,8 @@ class FeedFragment : Fragment() {
         binding.rvFeedFragment.layoutManager = LinearLayoutManager(requireContext())
         binding.rvFeedFragment.adapter = feedAdapter
 
-        viewModel.feed.observe( viewLifecycleOwner ) {
-            feedAdapter.submitList(it)
+        viewModel.feed.observe( viewLifecycleOwner ) { image ->
+            feedAdapter.submitList(image)
         }
 
         return binding.root
