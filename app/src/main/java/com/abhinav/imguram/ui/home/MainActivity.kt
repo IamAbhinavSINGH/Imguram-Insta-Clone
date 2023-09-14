@@ -18,6 +18,7 @@ import coil.request.ImageRequest
 import coil.size.ViewSizeResolver
 import com.abhinav.imguram.R
 import com.abhinav.imguram.databinding.ActivityMainBinding
+import com.bumptech.glide.Glide
 
 class MainActivity : AppCompatActivity() {
 
@@ -72,7 +73,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-        homeViewModel.tags.observe(this){
+        homeViewModel.tags.observe(this){ it ->
             storiesAdapter.submitList(it)
         }
     }
